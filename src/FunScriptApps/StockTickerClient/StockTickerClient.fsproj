@@ -39,8 +39,8 @@
   </PropertyGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '11.0'">
-      <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')">
-        <FSharpTargetsPath>$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets</FSharpTargetsPath>
+      <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\4.0\Framework\v4.0\Microsoft.FSharp.Targets')">
+        <FSharpTargetsPath>$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\4.0\Framework\v4.0\Microsoft.FSharp.Targets</FSharpTargetsPath>
       </PropertyGroup>
     </When>
     <Otherwise>
@@ -64,8 +64,12 @@
     <Content Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="FSharp.Core">
+      <HintPath>..\..\..\packages\FSharp.Core.4.0.0.1\lib\net40\FSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FunScript">
-      <HintPath>..\..\SignalRProviderLib\FunScript.dll</HintPath>
+      <HintPath>..\..\..\packages\FunScript.1.1.88\lib\net40\FunScript.dll</HintPath>
     </Reference>
     <Reference Include="FunScript.HTML">
       <HintPath>..\..\..\lib\FunScript.HTML.dll</HintPath>
@@ -74,48 +78,45 @@
       <HintPath>..\..\..\lib\FunScript.HTML.Ractive.dll</HintPath>
     </Reference>
     <Reference Include="FunScript.Interop">
-      <HintPath>..\..\SignalRProviderLib\FunScript.Interop.dll</HintPath>
+      <HintPath>..\..\..\lib\FunScript.Interop.dll</HintPath>
     </Reference>
     <Reference Include="FunScript.TypeScript.Binding.jquery">
-      <HintPath>..\..\SignalRProviderLib\FunScript.TypeScript.Binding.jquery.dll</HintPath>
+      <HintPath>..\..\..\lib\FunScript.TypeScript.Binding.jquery.dll</HintPath>
     </Reference>
     <Reference Include="FunScript.TypeScript.Binding.lib">
-      <HintPath>..\..\SignalRProviderLib\FunScript.TypeScript.Binding.lib.dll</HintPath>
+      <HintPath>..\..\..\lib\FunScript.TypeScript.Binding.lib.dll</HintPath>
     </Reference>
     <Reference Include="FunScript.TypeScript.Binding.signalr">
-      <HintPath>..\..\SignalRProviderLib\FunScript.TypeScript.Binding.signalr.dll</HintPath>
+      <HintPath>..\..\..\lib\FunScript.TypeScript.Binding.signalr.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.SignalR.Core">
-      <HintPath>..\..\SignalRProvider\SignalRProvider\bin\Release\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.SignalR.Core.2.2.0\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin">
-      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Owin.Security">
-      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Owin">
-      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ReflectionProxy">
-      <HintPath>..\..\SignalRProviderLib\ReflectionProxy.dll</HintPath>
+      <HintPath>..\..\..\lib\ReflectionProxy.dll</HintPath>
     </Reference>
     <Reference Include="SignalRProvider">
-      <HintPath>..\..\SignalRProviderLib\SignalRProvider.dll</HintPath>
+      <HintPath>..\..\..\lib\SignalRProvider.dll</HintPath>
     </Reference>
     <Reference Include="SignalRProviderRuntime">
-      <HintPath>..\..\SignalRProviderLib\SignalRProviderRuntime.dll</HintPath>
+      <HintPath>..\..\..\lib\SignalRProviderRuntime.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
