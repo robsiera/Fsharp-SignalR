@@ -53,12 +53,12 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <Compile Include="ProvidedTypes\Signatures\ProvidedTypes.fsi" />
-    <Compile Include="ProvidedTypes\Code\ProvidedTypes.fs" />
-    <Compile Include="ProvidedTypes\Code\Debug.fs" />
-    <Compile Include="SignalRProvider.fs" />
     <None Include="packages.config" />
     <None Include="app.config" />
+    <Compile Include="ProvidedTypes.fsi" />
+    <Compile Include="ProvidedTypes.fs" />
+    <Compile Include="DebugProvidedTypes.fs" />
+    <Compile Include="SignalRProvider.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">

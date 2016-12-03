@@ -67,6 +67,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\StockTickerClient\StockTickerClient.fsproj">
       <Name>StockTickerClient</Name>
       <Project>{12794c66-273d-4eed-9b2e-1fc6d768307f}</Project>

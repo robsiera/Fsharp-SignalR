@@ -36,7 +36,7 @@ let getTypes assemblies =
 
 [<TypeProvider>]
 type ClientProvider (config: TypeProviderConfig) as this =
-    inherit TypeProviderForNamespaces ()
+    inherit TypeProviderForNamespaces()
 
     let ns = "SignalRProvider.Hubs"
     let asm = Assembly.GetExecutingAssembly()
