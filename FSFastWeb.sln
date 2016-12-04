@@ -24,10 +24,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0BD7AC
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebApp", "src\StockTicker\WebApp.fsproj", "{88483D39-B796-44CE-85C9-5378E786BFB3}"
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FunScriptBuilder", "src\FunScriptApps\FunScriptBuilder\FunScriptBuilder.fsproj", "{13BBF0C9-77A0-4F02-ACD1-49545CBCFD69}"
-EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StockTickerSignalRServer", "src\StockTickerSignalRServer\StockTickerSignalRServer.fsproj", "{30D1881D-C5EB-42CD-AA2E-B0986019E2B7}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StockTickerClient", "src\FunScriptApps\StockTickerClient\StockTickerClient.fsproj", "{12794C66-273D-4EED-9B2E-1FC6D768307F}"
@@ -46,14 +42,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{88483D39-B796-44CE-85C9-5378E786BFB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88483D39-B796-44CE-85C9-5378E786BFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88483D39-B796-44CE-85C9-5378E786BFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88483D39-B796-44CE-85C9-5378E786BFB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13BBF0C9-77A0-4F02-ACD1-49545CBCFD69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13BBF0C9-77A0-4F02-ACD1-49545CBCFD69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13BBF0C9-77A0-4F02-ACD1-49545CBCFD69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13BBF0C9-77A0-4F02-ACD1-49545CBCFD69}.Release|Any CPU.Build.0 = Release|Any CPU
 		{30D1881D-C5EB-42CD-AA2E-B0986019E2B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{30D1881D-C5EB-42CD-AA2E-B0986019E2B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30D1881D-C5EB-42CD-AA2E-B0986019E2B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
